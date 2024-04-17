@@ -113,15 +113,15 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
 
     return (
         <div>
-            <select value={selectedLanguage} onChange={handleLanguageChange}>
+            <select className='selectLanguage' value={selectedLanguage} onChange={handleLanguageChange}>
                 <option value="javascript">JavaScript</option>
                 <option value="text/x-c++src">C++</option>
             </select>
             <br />
             <textarea id="realtimeEditor"></textarea>
             <br />
-            <button onClick={handleRun}>Run</button>
-            <div>{output}</div>
+            <button className="btn runBtn" onClick={handleRun}>Run</button>
+            <div className='output' >{output}</div>
         </div>
     );
 };

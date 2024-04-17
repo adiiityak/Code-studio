@@ -82,7 +82,9 @@
 .mainWrap {
   display: grid;
   grid-template-columns: 330px 1fr;
-  height: 100vh;
+ margin-top: 0px;
+  /* height: 100vh; */
+  /* overflow: hidden; */
 }
 
 .aside {
@@ -92,6 +94,9 @@
   color: #fff;
   display: flex;
   flex-direction: column;
+
+  max-height: 100vh; /* Add this line */
+  overflow-y: auto; /* Add this line to enable vertical scrolling if needed */
 }
 
 .asideInner {
@@ -128,10 +133,46 @@
 .leaveBtn {
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.runBtn{
+  width: 100px;
+  font-weight: bold;
+  color: #5271FF;
+  /* margin-bottom: 20px;
+  margin-left: 60px; */
+
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.selectLanguage {
+  appearance: none;
+  padding: 10px; 
+  margin-top: 16px;
+  margin-left: 16px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #fff; 
+  color: #5271FF;
+  font-size: 16px; 
+  font-weight: bold;
+}
+
+.output {
+  overflow: visible !important; 
+  margin-top: 10px;
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #000000; 
+  color: #ffffff; 
 }
 
 .CodeMirror{
-  min-height: calc(100vh - 20px);
+  min-height: calc(645px - 80px);
   font-size:20px;
   line-height: 1.6;
   padding-top: 20px;
