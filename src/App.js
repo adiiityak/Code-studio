@@ -14,26 +14,26 @@ function App() {
           toastOptions={{
             success:{
               style: {
-                border: '1px solid #713200',
+                border: '1px solid #5271FF',
                 padding: '16px',
-                color: '#222',
-                background: '#F89A24'
+                color: '#fff',
+                background: '#5271FF'
               },
               iconTheme: {
                 primary: '#fff',
-                secondary: '#F89A24',
+                secondary: '#5271FF',
               },
             },
             error:{
               style: {
-                border: '1px solid #713200',
+                border: '1px solid #5271FF',
                 padding: '16px',
-                color: '#222',
-                background: '#F89A24'
+                color: '#fff',
+                background: '#5271FF'
               },
               iconTheme: {
                 primary: '#fff',
-                secondary: '#F89A24',
+                secondary: '#5271FF',
               },
             },
           }}
